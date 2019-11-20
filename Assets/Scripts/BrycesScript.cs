@@ -44,8 +44,11 @@ public class BrycesScript : MonoBehaviour
         string output = "Input Sensed: " + Direction +" = ";
         if (Direction == "100")
         {
-            output += "Left";
-            transform.Translate(Vector3.left * amountToMove, Space.World);
+            // output += "Left";
+            // transform.Translate(Vector3.left * amountToMove, Space.World);
+            redActive.SetActive(false);
+            this.GetComponent<Renderer>().enabled = false;
+            this.GetComponent<BoxCollider2D>().enabled = false;
         }
         else if (Direction == "010")
         {
@@ -54,8 +57,11 @@ public class BrycesScript : MonoBehaviour
         }
         else if (Direction == "001")
         {
-            output += "Right";
-            transform.Translate(Vector3.right * amountToMove, Space.World);
+            // output += "Right";
+            // transform.Translate(Vector3.right * amountToMove, Space.World);
+            redActive.SetActive(true);
+            this.GetComponent<Renderer>().enabled = true;
+            this.GetComponent<BoxCollider2D>().enabled = true;
         }
         else
         {
