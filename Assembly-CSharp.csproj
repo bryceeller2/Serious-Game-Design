@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4C45ADB8-4FEE-20E1-3747-BEB22A615385}</ProjectGuid>
+    <ProjectGuid>{B3622B63-7A1D-B61A-29BC-EECE770563FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\Core\Simulation.cs" />
      <Compile Include="Assets\Scripts\Core\Simulation.Event.cs" />
      <Compile Include="Assets\Scripts\Core\Simulation.InstanceRegister.cs" />
+     <Compile Include="Assets\Scripts\EnableDisable.cs" />
      <Compile Include="Assets\Scripts\Gameplay\EnablePlayerInput.cs" />
      <Compile Include="Assets\Scripts\Gameplay\EnemyDeath.cs" />
      <Compile Include="Assets\Scripts\Gameplay\HealthIsZero.cs" />
@@ -88,6 +89,7 @@
      <Compile Include="Assets\Scripts\Gameplay\PlayerSpawn.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PlayerStopJump.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PlayerTokenCollision.cs" />
+     <Compile Include="Assets\Scripts\KeyMovement.cs" />
      <Compile Include="Assets\Scripts\Mechanics\AnimationController.cs" />
      <Compile Include="Assets\Scripts\Mechanics\DeathZone.cs" />
      <Compile Include="Assets\Scripts\Mechanics\EnemyController.cs" />
@@ -126,52 +128,52 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Cinemachine">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Connect.Share.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InteractiveTutorials.Core">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.UIWidgets">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.InteractiveTutorialsFramework">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.024">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -375,16 +377,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="System.IO.Compression.FileSystem">
- <HintPath>C:/Users/Computer/SeriousGame2/Library/PackageCache/com.unity.connect.share@1.0.5-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+ <HintPath>C:/Users/Computer/Documents/GitHub/Serious-Game-Design/Library/PackageCache/com.unity.connect.share@1.0.5-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
