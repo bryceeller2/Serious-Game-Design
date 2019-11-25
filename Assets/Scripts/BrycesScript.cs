@@ -24,6 +24,8 @@ public class BrycesScript : MonoBehaviour
     {
         amountToMove = speed * Time.deltaTime;
 
+        
+
         if (sp.IsOpen)
         {
             try
@@ -46,7 +48,7 @@ public class BrycesScript : MonoBehaviour
         {
             // output += "Left";
             // transform.Translate(Vector3.left * amountToMove, Space.World);
-            redActive.SetActive(false);
+            //redActive.SetActive(false);
             this.GetComponent<Renderer>().enabled = false;
             this.GetComponent<BoxCollider2D>().enabled = false;
         }
@@ -59,7 +61,7 @@ public class BrycesScript : MonoBehaviour
         {
             // output += "Right";
             // transform.Translate(Vector3.right * amountToMove, Space.World);
-            redActive.SetActive(true);
+            //redActive.SetActive(true);
             this.GetComponent<Renderer>().enabled = true;
             this.GetComponent<BoxCollider2D>().enabled = true;
         }

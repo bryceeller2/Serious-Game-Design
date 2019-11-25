@@ -8,16 +8,16 @@ public class EnableDisable : MonoBehaviour
     public float speed;
     private float amountToMove;
     public string value;
-    public GameObject redActive;
 
     //SerialPort sp = new SerialPort("COM5", 9600); //Change this based on which USB port you're using
-    
+    //THIS SCRIPT GOES ON THE BLOCKS THEMSELVES
+
     // Start is called before the first frame update
     void Start()
     {
         //sp.Open();
         //sp.ReadTimeout = 1;
-        redActive = GameObject.Find("RedActive");
+        //redActive = GameObject.Find("RedActive");
         print("Bryce's Script is listening for Arduino Input");
     }
 
@@ -26,24 +26,34 @@ public class EnableDisable : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            print("weiners");
-            if (redActive.active == true)
-            {
-                redActive.SetActive(false);
-                this.GetComponent<Renderer>().enabled = false;
-                this.GetComponent<BoxCollider2D>().enabled = false;
-            }
-            else
-            {
-                redActive.SetActive(true);
-                this.GetComponent<Renderer>().enabled = true;
-                this.GetComponent<BoxCollider2D>().enabled = true;
-            }
+            this.GetComponent<Renderer>().enabled = false;
+            this.GetComponent<BoxCollider2D>().enabled = false;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            redActive.SetActive(true);
+            this.GetComponent<Renderer>().enabled = true;
+            this.GetComponent<BoxCollider2D>().enabled = true;
         }
+        //if (sp.IsOpen)
+        //{
+        //    try
+        //    {
+        //        value = sp.ReadExisting();
+        //        value = value.Remove(3);
+        //        MoveObject(value);
+
+//                checkArduino();
+  //          }
+    //        catch (System.Exception)
+      //      {
+
+        //    }
+        //}
+    }
+
+    void checkArduino()
+    {
+
     }
 
     void MoveObject(string Direction)
