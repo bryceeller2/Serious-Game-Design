@@ -58,21 +58,17 @@ public class EnableDisableYellow : MonoBehaviour
 
     void MoveObject(string Direction)
     {
-        string output = "Input Sensed: " + Direction +" = ";
-        if (Direction == "100")
+        //Activates an object based on the SECOND digit
+        string output = "Input Sensed: " + Direction + " = ";
+        if (Direction == "01" || Direction == "11")
         {
-            output += "Left";
-            transform.Translate(Vector3.left * amountToMove, Space.World);
+            this.GetComponent<Renderer>().enabled = true;
+            this.GetComponent<BoxCollider2D>().enabled = true;
         }
-        else if (Direction == "010")
+        if (Direction == "00" || Direction == "10")
         {
-            output += "Jump";
-            //transform.Translate(Vector3.right * amountToMove, Space.World);
-        }
-        else if (Direction == "001")
-        {
-            output += "Right";
-            transform.Translate(Vector3.right * amountToMove, Space.World);
+            this.GetComponent<Renderer>().enabled = false;
+            this.GetComponent<BoxCollider2D>().enabled = false;
         }
         else
         {

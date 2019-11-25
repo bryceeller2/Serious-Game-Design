@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyMovement : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class KeyMovement : MonoBehaviour
             position = this.transform.position;
             position.x+=1;
             this.transform.position = position;
+        }
+
+        if (this.transform.position.y < -50)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
     }
