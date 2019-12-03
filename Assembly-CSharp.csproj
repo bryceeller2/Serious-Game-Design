@@ -91,6 +91,7 @@
      <Compile Include="Assets\Scripts\EnableDisable.cs" />
      <Compile Include="Assets\Scripts\EnableDisableYellow.cs" />
      <Compile Include="Assets\Scripts\KeyMovement.cs" />
+     <Compile Include="Assets\Scripts\ListenerScript.cs" />
      <Compile Include="Assets\Scripts\Mechanics\AnimationController.cs" />
      <Compile Include="Assets\Scripts\Mechanics\DeathZone.cs" />
      <Compile Include="Assets\Scripts\Mechanics\EnemyController.cs" />
