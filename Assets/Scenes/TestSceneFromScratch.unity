@@ -2280,6 +2280,7 @@ MonoBehaviour:
   value: 
   leftEnabled: 0
   rightEnabled: 0
+  midEnabled: 0
 --- !u!1001 &501153369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5885,6 +5886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14819a152e6ebc439df630a4e747837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  listener: {fileID: 499971144}
 --- !u!95 &1464867570
 Animator:
   serializedVersion: 3
@@ -6008,7 +6011,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

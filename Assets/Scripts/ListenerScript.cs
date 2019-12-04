@@ -11,6 +11,7 @@ public class ListenerScript : MonoBehaviour
 
     public bool leftEnabled;
     public bool rightEnabled;
+    public bool midEnabled;
 
 
     SerialPort sp = new SerialPort("COM5", 9600); //Change this based on which USB port you're using
@@ -22,6 +23,7 @@ public class ListenerScript : MonoBehaviour
         sp.Open();
         sp.ReadTimeout = 1;
         leftEnabled = false;
+        midEnabled = false;
         rightEnabled = false;
         print("Listener Script is listening for Arduino Input");
     }
@@ -65,6 +67,13 @@ public class ListenerScript : MonoBehaviour
         {
             rightEnabled = false;
         }
-        print(output);
+        if (Direction == "010" || Direction == "110" || Direction == "011" || Direction == "111")
+        {
+            midEnabled = true;
+        }
+        else if (Direction == "000" || Direction == "100" || Direction == "001" || Direction == "101")
+        {
+            midEnabled = false;
+        }
     }
 }

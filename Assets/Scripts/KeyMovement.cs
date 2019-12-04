@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO.Ports;
 
 public class KeyMovement : MonoBehaviour
 {
-
-    int speed = 5;
+    public int speed;
     int timer = 0;
+    public ListenerScript listener;
     // Start is called before the first frame update
     void Start()
     {
+        speed = 5;
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class KeyMovement : MonoBehaviour
         timer += 1;
         Vector3 position = this.transform.position;
 
-        if (timer % speed == 0)
+        if (timer % speed == 0 && listener.midEnabled==false)
         {
             position.x += 1;
             this.transform.position = position;
